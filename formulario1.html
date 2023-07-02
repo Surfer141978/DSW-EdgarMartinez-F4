@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS GRID</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+</head>
+
+<body>
+    <div class="containerg">
+        <div class="fila1">
+            <header>
+                <h1>DISEÑO DE SITIOS WEB</h1>
+                <img src="img/img22.png" alt="">
+
+            </header>
+        </div>
+
+        <div class="col-nav">
+            <aside class="menu">
+                <ul id="main-menu" class="main-menu">
+                    <li class="main-menu__item">
+                        <a href="index.html" class="main-menu__link">
+                            Inicio
+                        </a>
+                    </li>
+                    <li class="main-menu__item">
+                        <a href="#" class="main-menu__link">
+                            Temas
+
+                        </a>
+                        <ul>
+                            <li><a href="cssgrid.html" class="main-menu__link">
+                                    CSS GRID
+                                </a></li>
+                        </ul>
+                    </li>
+                    <li class="main-menu__item">
+                        <a href="#" class="main-menu__link">
+                            Audios
+                        </a>
+                        <ul>
+                            <li><a href="audios1.html" class="main-menu__link">
+                                    Audio CSS GRID
+                                </a></li>
+                        </ul>
+                    </li>
+                    <li class="main-menu__item">
+                        <a href="formulario1.html" class="main-menu__link">
+                            Formulario Css Grid
+                        </a>
+                    </li>
+                    <li class="main-menu__item">
+                        <a href="nosotro.html" class="main-menu__link">
+                            Nosotros
+                        </a>
+                    </li>
+                </ul>
+
+            </aside>
+        </div>
+
+        <div class="fila2">
+            <!-- Sección principal -->
+            <section id="inicio" class="inicio">
+                <h1 class="titulo">Formulario css Grid</h1>
+                <form name="formulario">
+                    <div class="form-group">
+                        <label class="p"><strong>Pregunta 1: ¿Qué es CSS Grid?</strong></label><br>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="pregunta1" id="pregunta1_opcion1"
+                                value="opcion1" required>
+                            <label class="form-check-label p" for="pregunta1_opcion1">Es una técnica de diseño para
+                                crear diseños responsivos de manera más eficiente.</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="pregunta1" id="pregunta1_opcion2"
+                                value="opcion2">
+                            <label class="form-check-label p" for="pregunta1_opcion2">Es un lenguaje de programación
+                                utilizado para desarrollar sitios web interactivos.</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="pregunta1" id="pregunta1_opcion3"
+                                value="opcion3">
+                            <label class="form-check-label p" for="pregunta1_opcion3">Es una biblioteca de JavaScript
+                                para crear animaciones en sitios web.</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="p"><strong>Pregunta 2: ¿Cuáles son los principales componentes de CSS Grid?</strong></label><br>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="pregunta2" id="pregunta2_opcion1"
+                                value="opcion1" required>
+                            <label class="form-check-label p" for="pregunta2_opcion1">Grid Container</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="pregunta2" id="pregunta2_opcion2"
+                                value="opcion2">
+                            <label class="form-check-label p" for="pregunta2_opcion2">Grid Item</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="pregunta2" id="pregunta2_opcion3"
+                                value="opcion3">
+                            <label class="form-check-label p" for="pregunta2_opcion3">Grid Line</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="p"><strong>Pregunta 3: ¿Cómo se crea un grid layout en CSS?</strong></label><br>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="pregunta3" id="pregunta3_opcion1"
+                                value="opcion1" required>
+                            <label class="form-check-label p" for="pregunta3_opcion1">Utilizando la propiedad display:
+                                grid;</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="pregunta3" id="pregunta3_opcion2"
+                                value="opcion2">
+                            <label class="form-check-label p" for="pregunta3_opcion2">Aplicando la clase grid-layout a
+                                un contenedor HTML;</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="pregunta3" id="pregunta3_opcion3"
+                                value="opcion3">
+                            <label class="form-check-label p" for="pregunta3_opcion3">Escribiendo la función
+                                createGrid() en JavaScript;</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="p"><strong>Pregunta 4: ¿Cuál es la diferencia entre grid-template-columns y
+                            grid-template-rows?</strong></label><br>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="pregunta4" id="pregunta4_opcion1"
+                                value="opcion1" required>
+                            <label class="form-check-label p" for="pregunta4_opcion1">grid-template-columns define las
+                                columnas del grid, mientras que grid-template-rows define las filas del grid.</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="pregunta4" id="pregunta4_opcion2"
+                                value="opcion2">
+                            <label class="form-check-label p" for="pregunta4_opcion2">grid-template-columns define las
+                                filas del grid, mientras que grid-template-rows define las columnas del grid.</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="pregunta4" id="pregunta4_opcion3"
+                                value="opcion3">
+                            <label class="form-check-label p" for="pregunta4_opcion3">No hay diferencia, pueden usarse
+                                indistintamente.</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="p"><strong>Pregunta 5: ¿Cuál es la sintaxis para colocar un elemento en una celda
+                            específica del grid?</strong></label><br>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="pregunta5" id="pregunta5_opcion1"
+                                value="opcion1" required>
+                            <label class="form-check-label p" for="pregunta5_opcion1">grid-column-start: X;
+                                grid-column-end: Y; grid-row-start: A; grid-row-end: B;</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="pregunta5" id="pregunta5_opcion2"
+                                value="opcion2">
+                            <label class="form-check-label p" for="pregunta5_opcion2">grid-position: X Y;</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="pregunta5" id="pregunta5_opcion3"
+                                value="opcion3">
+                            <label class="form-check-label p" for="pregunta5_opcion3">grid-cell: X Y;</label>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary" onclick="return procesarRespuestas()">Enviar
+                        respuestas</button>
+                </form>
+                <div id="resultado"></div>
+            </section>
+
+        </div>
+
+
+
+        <div class="fila3">
+            <footer>
+                <p>&copy; 2023 | Última actualización: mayo 2023</p>
+            </footer>
+        </div>
+        <!-- Pie de página -->
+
+    </div>
+    <!-- Encabezado -->
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
+        integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"
+        integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
+        crossorigin="anonymous"></script>
+
+    <script src="https://kit.fontawesome.com/11614eb144.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

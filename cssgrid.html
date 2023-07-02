@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS GRID</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+    <div class="containerg">
+        <div class="fila1">
+            <header>
+                <h1>Pagina de presentacion de CSS GRID</h1>
+                <img src="img/cssgri1.png" class="img-responsive">
+            </header>
+        </div>
+        <div class="col-nav">
+            <aside class="menu">
+                <ul id="main-menu" class="main-menu">
+                    <li class="main-menu__item">
+                        <a href="index.html" class="main-menu__link">
+                            Inicio
+                        </a>
+                    </li>
+                    <li class="main-menu__item">
+                        <a href="#" class="main-menu__link">
+                            Temas
+
+                        </a>
+                        <ul>
+                            <li><a href="cssgrid.html" class="main-menu__link">
+                                    CSS GRID
+                                </a></li>
+                        </ul>
+                    </li>
+                    <li class="main-menu__item">
+                        <a href="#" class="main-menu__link">
+                            Audios
+                        </a>
+                        <ul>
+                            <li><a href="audios1.html" class="main-menu__link">
+                                    Audio CSS GRID
+                                </a></li>
+                        </ul>
+                    </li>
+                    <li class="main-menu__item">
+                        <a href="formulario1.html" class="main-menu__link">
+                            Formulario Css Grid
+                        </a>
+                    </li>
+                    <li class="main-menu__item">
+                        <a href="nosotro.html" class="main-menu__link">
+                            Nosotros
+                        </a>
+                    </li>
+                </ul>
+
+            </aside>
+        </div>
+    </div>
+    <div class="fila2">
+        <section id="tema-seleccionado">
+            <section id="tema-seleccionado">
+                <h2>Tema seleccionado CSS GRID</h2>
+                <article class="container-fluid">
+                    <div class="row">
+                        <div class="col-8">
+                            <h3>Definir un contenedor de cuadrícula</h3>
+                            <p class="texto">Lo primero que debe hacer para utilizar CSS Grid es definir un
+                                contenedor
+                                de
+                                cuadrícula. Esto se hace
+                                mediante la propiedad <code>display: grid</code> en el selector CSS que corresponde
+                                al
+                                contenedor.
+                                Por
+                                ejemplo:</p>
+                            <code class="codigo">
+                                <pre>
+                                    .grid-container {
+                                        <strong>display: grid;</strong>
+                                        grid-template-columns: auto auto auto;
+                                    }
+                                    .grid-item {
+                                        padding: 20px;
+                                        font-size: 30px;
+                                        text-align: center;
+                                    }
+                                </pre>
+                            </code>
+                            <p class="texto">Este código define un diseño de cuadrícula utilizando CSS Grid. La
+                                clase
+                                .grid-containerse utiliza
+                                para
+                                contener los elementos que se van a mostrar en la cuadrícula. Se define como una
+                                cuadrícula de
+                                tres
+                                columnas de ancho automático (se ajustará automáticamente al tamaño del contenido)
+                                mediante la
+                                propiedad
+                                grid-template-columns: auto auto auto;.</p>
+
+                            <p class="texto"> clase .grid-itemse utiliza para los elementos que se van a mostrar en
+                                la
+                                cuadrícula.
+                                Se definen
+                                algunas propiedades de estilo, como el relleno ( padding), el tamaño de fuente (
+                                font-size) y la
+                                alineación de texto ( text-align).</p>
+                        </div>
+                        <div class="col-4">
+                            <img src="img/img1.png" class="img-thumbnail">
+                        </div>
+                    </div>
+
+
+                </article>
+                <hr>
+                <article class="container-fluid">
+                    <div class="row">
+                        <div class="col-8">
+                            <h3> Definir las filas y columnas de la cuadrícula</h3>
+                            <p class="texto">Una vez que haya definido el contenedor de cuadrícula, puede definir
+                                las
+                                filas y
+                                columnas de la
+                                cuadrícula. Para hacerlo, utiliza las propiedades grid-template-rowsy
+                                grid-template-columns. Por
+                                ejemplo:</p>
+
+                            <p>
+                                <code>
+                                    <pre>
+                                        .container {<br>
+                                            display: grid;<br>
+                                            grid-template-rows: 100px 200px;<br>
+                                            grid-template-columns: 1fr 2fr 1fr;<br>
+                                    }
+                                    </pre>
+                                </code>
+                            </p>
+                            <p class="texto">En este ejemplo, la cuadrícula tiene dos filas, la primera de 100
+                                píxeles
+                                de altura
+                                y
+                                la segunda de
+                                200
+                                píxeles de altura. También tiene tres columnas, la primera y la tercera ocupada un
+                                tercio del
+                                ancho
+                                disponible, mientras que la segunda ocupa dos tercios.</p>
+
+                        </div>
+                        <div class="col-4">
+                            <img src="img/img2.png" class="img-thumbnail">
+                        </div>
+                    </div>
+
+
+
+                </article>
+                <hr>
+                <article class="container-fluid">
+                    <div class="row">
+                        <div class="col-3">
+                            <h3>Columnas de cuadrícula</h3>
+                            <p class="texto">Las líneas verticales de los elementos de la cuadrícula se denominan
+                                columnas .
+                            </p>
+
+                            <img src="img/img3.png" class="img-fluid img-thumbnail rounded mx-auto">
+                        </div>
+                        <div class="col-3">
+                            <h3>Filas de cuadrícula</h3>
+                            <p class="texto">Las líneas horizontales de los elementos de la cuadrícula se denominan
+                                filas .
+                            </p>
+                            <img src="img/img4.png" class="img-fluid img-thumbnail rounded mx-auto" alt="">
+                        </div>
+                        <div class="col-3">
+                            <h3>Brechas de cuadrícula</h3>
+                            <p class="texto">Los espacios entre cada columna/fila se denominan espacios </p>
+                            <img src="img/img4.png" class="img-fluid img-thumbnail rounded mx-auto" alt="">
+                        </div>
+                        <div class="col-3">
+                            <h3>Brechas de cuadrícula</h3>
+                            <p class="texto">Los espacios entre cada columna/fila se denominan espacios .</p>
+                            <img src="img/img5.png" class="img-fluid img-thumbnail rounded mx-auto" alt="">
+                        </div>
+                    </div>
+
+
+
+
+
+                    <div class="ejemplos">
+                        <div class="car shadow-lg p-3 rounded">
+                            <h4>ejemplo column-gap</h4>
+                            <p>La propiedad column-gap establece el espacio entre las columnas:</p>
+                            <code>
+        <pre>
+            .grid-container {
+                display: grid;
+                column-gap: 50px;
+                grid-template-columns: auto auto auto;
+              }
+        </pre>
+                            </code>
+                            <img src="img/img6.png" alt="" height="80px">
+                            <p>La propiedad "column-gap" define el espacio entre las columnas de una cuadrícula y
+                                especifica
+                                la
+                                distancia horizontal entre elementos adyacentes. En este caso, la propiedad se
+                                establece en
+                                50px, lo que significa que cada columna tendrá un espacio de 50px entre ellas.</p>
+
+                        </div>
+                        <div class="car shadow-lg p-3 rounded">
+                            <h4>ejemplo row-gap</h4>
+                            <p>La <code>row-gap</code> propiedad establece el espacio entre las filas:
+                            </p>
+                            <code>
+        <pre>
+            .grid-container {
+                display: grid;
+                row-gap: 50px;
+                grid-template-columns: auto auto auto;
+              } 
+        </pre>
+                                </code>
+                            <img src="img/img7.png" alt="" height="80px">
+                            <p>tiene la propiedad display establecida en grid, lo que la convierte en un contenedor
+                                de
+                                cuadrícula. Luego, la propiedad row-gap se establece en 50px, lo que significa que
+                                habrá un
+                                espacio de 50px entre cada fila en la cuadrícula.</p>
+                        </div>
+                        <div class="car shadow-lg p-3 rounded">
+                            <h4>Ejemplo gap</h4>
+                            <p>La gap propiedad es una propiedad abreviada para el row-gap y las column-gap
+                                propiedades:
+
+                            </p>
+                            <code>
+        <pre>
+            .grid-container {
+                display: grid;
+                gap: 50px 100px;
+                grid-template-columns: auto auto auto;
+              }
+        </pre>
+                                </code>
+                            <img src="img/img8.png" alt="" height="80px">
+                            <p>Este código establece una cuadrícula utilizando CSS Grid, donde los elementos de la
+                                cuadrícula
+                                tendrán un espacio de 50 píxeles entre las filas y un espacio de 100 píxeles entre
+                                las
+                                columnas.
+                                Es decir, se establece una separación diferente entre filas y columnas usando la
+                                propiedad
+                                "gap".</p>
+                        </div>
+
+                    </div>
+                </article>
+                <hr>
+                <article class="container-fluid">
+                    <div class="row">
+                        <div class="col-8">
+                            <h2>Contenedor de cuadrícula CSS</h2>
+                            <h3>La propiedad grid-template-columns</h3>
+                            <p class="texto">La grid-template-columnspropiedad define el número de columnas en su
+                                diseño
+                                de
+                                cuadrícula y puede
+                                definir el ancho de cada columna.
+
+                                El valor es una lista separada por espacios, donde cada valor define el ancho de la
+                                columna
+                                respectiva.
+
+                                Si desea que su diseño de cuadrícula contenga 4 columnas, especifique el ancho de
+                                las 4
+                                columnas
+                                o
+                                "automático" si todas las columnas deben tener el mismo ancho.</p>
+                            <code>
+                                <pre>
+                                    .grid-container {
+                                        display: grid;
+                                        grid-template-columns: auto auto auto auto;
+                                      }
+                                </pre>
+                            </code>
+                            <p class="texto">La grid-template-columnspropiedad también se puede utilizar para
+                                especificar el
+                                tamaño
+                                (ancho) de las
+                                columnas.</p>
+                            <p class="texto">Este código define una cuadrícula (grid) con 4 columnas del mismo
+                                ancho. El
+                                valor
+                                "auto" indica que
+                                el ancho de cada columna se ajustará automáticamente en función del contenido que
+                                tenga.
+                            </p>
+                        </div>
+
+                        <div class="col-4">
+                            <img src="img/img9.png" class="img-fluid img-thumbnail rounded mx-auto" alt="">
+                        </div>
+
+                    </div>
+
+                </article>
+                <hr>
+                <article>
+                    <div class="izquierda">
+                        <h3>La propiedad grid-template-rows</h3>
+                        <p class="texto">La grid-template-rowspropiedad define la altura de cada fila</p>
+                        <code>
+                                <pre>
+                                    .grid-container {
+                                        display: grid;
+                                        grid-template-rows: 80px 200px;
+                                      }
+                                </pre>
+                            </code>
+                        <p class="texto">
+                            El valor es una lista separada por espacios, donde cada valor define la altura de la
+                            fila
+                            respectiva, en este caso, se están definiendo dos filas con una altura de 80 píxeles
+                            para la
+                            primera
+                            fila y 200 píxeles para la segunda fila.
+                        </p>
+
+                    </div>
+                    <div class="derecha">
+                        <img src="img/img10.png" alt="" class="imagen">
+                    </div>
+                </article>
+                <hr>
+                <article>
+                    <h3 class="center">Ejemplos de la propiedad de justificar el contenido</h3>
+                    <p class="texto">La justify-contentpropiedad se utiliza para alinear toda la cuadrícula dentro
+                        del
+                        contenedor.</p>
+                    <div class="ejemplos">
+
+                        <div class="car shadow-lg p-3 rounded">
+                            <h4>space-evenly</h4>
+                            <p>Utilice la propiedad de justificar el contenido para alinear la cuadrícula dentro del
+                                contenedor.
+
+                                El valor "space-evenly" dará a las columnas la misma cantidad de espacio entre ellas
+                                y
+                                alrededor
+                                de ellas:</p>
+                            <code>
+        <pre>
+            .grid-container {
+                display: grid;
+                justify-content: space-evenly;
+              }
+        </pre>
+                                </code>
+                            <img src="img/img11.png" alt="">
+
+                        </div>
+                        <div class="car shadow-lg p-3 rounded">
+                            <h4 class="card-title">space-between</h4>
+                            <p>Utilice la propiedad de justificar el contenido para alinear la cuadrícula dentro del
+                                contenedor.
+
+                                El valor "space-between" dará a las columnas la misma cantidad de espacio entre
+                                ellas:</p>
+                            <code>
+        <pre>
+            .grid-container {
+                display: grid;
+                justify-content: space-between;
+              }
+        </pre>
+                                </code><img src="img/img12.png" alt="">
+
+                        </div>
+                        <div class="car shadow-lg p-3 rounded">
+                            <h4>center</h4>
+                            <p>Utilice la propiedad de justificar el contenido para alinear la cuadrícula dentro del
+                                contenedor.
+
+                                El valor "center" alineará la cuadrícula en el medio del contenedor:</p>
+                            <code>
+        <pre>
+            .grid-container {
+                display: grid;
+                justify-content: center;
+              }
+        </pre>
+                                </code><img src="img/img13.png" alt="">
+                            <p></p>
+                        </div>
+
+                    </div>
+                    <div class="ejemplos">
+
+                        <div class="car shadow-lg p-3 rounded">
+                            <h4>start</h4>
+                            <p>Utilice la propiedad de justificar el contenido para alinear la cuadrícula dentro del
+                                contenedor.
+
+                                El valor "start" alineará la cuadrícula al comienzo del contenedor:</p>
+                            <code>
+        <pre>
+            .grid-container {
+                display: grid;
+                justify-content: start;
+              }
+        </pre>
+                                </code><img src="img/img14.png" alt="">
+                            <p></p>
+                        </div>
+                        <div class="car shadow-lg p-3 rounded">
+                            <h4>end</h4>
+                            <p>Utilice la propiedad de justificar el contenido para alinear la cuadrícula dentro del
+                                contenedor.
+
+                                El valor "end" alineará la cuadrícula al final del contenedor:</p>
+                            <code>
+        <pre>
+            .grid-container {
+                display: grid;
+                justify-content: end;
+              }
+        </pre>
+                                </code><img src="img/img15.png" alt="">
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+            </section>
+        </section>
+    </div>
+    <div class="fila3">
+        <footer>
+            <p>&copy; 2023 | Última actualización: mayo 2023</p>
+        </footer>
+    </div>
+
+    </div>
+    <!-- Encabezado -->
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
+        integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"
+        integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
